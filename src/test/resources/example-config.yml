@@ -1,0 +1,23 @@
+items:
+  portalcompass:
+    item: 345
+    actions:
+    - LEFT_CLICK_AIR
+    commands:
+    - some command
+    - some other command
+    permission: some.custom.permission
+  duplicate1:
+    item: 1
+    actions:
+    - RIGHT_CLICK_AIR
+    commands:
+    - command 1
+    permission: some.custom.permission1
+  duplicate2:
+    item: 1
+    actions:
+    - RIGHT_CLICK_BLOCK
+    commands:
+    - command 2
+    permission: some.custom.permission2
