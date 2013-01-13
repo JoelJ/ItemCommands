@@ -35,6 +35,7 @@ As defined above, the command will be executed even if they don't have permissio
         ...
 
 You can even have it execute multiple commands:
+
     items:
         townPortalWarp:
             ...
@@ -45,3 +46,20 @@ You can even have it execute multiple commands:
 
 Hope you enjoy!
 
+Format of the config file:
+
+    items:
+        <Any unique name>:
+            item: <number>
+            permission: <some permission string>
+            actions: 
+            - LEFT_CLICK_BLOCK
+            - RIGHT_CLICK_BLOCK
+            - LEFT_CLICK_AIR
+            - RIGHT_CLICK_AIR
+            - PHYSICAL
+            commands:
+            - <a list of 1 or more commands>
+
+Note: I haven't tested the "PHYSICAL" option for "actions". Not exactly sure what that means, I just know it's an option in code.
+If you do not specify any actions, then "LEFT_CLICK_BLOCK" and "LEFT_CLICK_AIR" are assumed.
